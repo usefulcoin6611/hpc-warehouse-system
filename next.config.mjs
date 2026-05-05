@@ -1,13 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Konfigurasi yang lebih aman untuk ESLint dan TypeScript
-  eslint: {
-    ignoreDuringBuilds: process.env.NODE_ENV === 'production' && process.env.IGNORE_ESLINT === 'true',
-  },
-  typescript: {
-    ignoreBuildErrors: process.env.NODE_ENV === 'production' && process.env.IGNORE_TYPESCRIPT === 'true',
-  },
-  
   // Optimasi Images
   images: {
     unoptimized: false,
@@ -22,6 +14,18 @@ const nextConfig = {
     ],
   },
   
+  // Optimasi Next.js 16
+  cacheComponents: true,
+  
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: ['@svgr/webpack'],
+        as: '*.js',
+      },
+    },
+  },
+
   // Optimasi Experimental Features
   experimental: {
     optimizePackageImports: [
@@ -33,14 +37,6 @@ const nextConfig = {
       'recharts',
       'date-fns',
     ],
-    turbo: {
-      rules: {
-        '*.svg': {
-          loaders: ['@svgr/webpack'],
-          as: '*.js',
-        },
-      },
-    },
   },
   
   // Optimasi Webpack
