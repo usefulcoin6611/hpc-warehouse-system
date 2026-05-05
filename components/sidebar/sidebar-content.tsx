@@ -39,8 +39,8 @@ export function SidebarContent({
 
   return (
     <div className={`flex h-full flex-col bg-[#3430e2] ${className}`}>
-      <SidebarHeader />
-      <SidebarProfile user={user} isUserLoading={isUserLoading} userError={userError} />
+      <SidebarHeader user={user} isUserLoading={isUserLoading} userError={userError} />
+      {/* SidebarProfile has been integrated into SidebarHeader */}
       <SidebarNavigation
         menuItems={filteredMenuItems}
         currentPath={currentPath}

@@ -1,6 +1,6 @@
-# 🚀 HPC Website - Deployment Guide
+# 🚀 LogiFlow Website - Deployment Guide
 
-Panduan lengkap untuk deploy HPC Website ke cPanel dengan Node.js support.
+Panduan lengkap untuk deploy LogiFlow Website ke cPanel dengan Node.js support.
 
 ## 📋 Quick Start
 

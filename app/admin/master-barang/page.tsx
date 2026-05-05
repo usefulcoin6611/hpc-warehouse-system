@@ -182,7 +182,7 @@ export default function MasterBarangPage() {
           </div>
         ) : (
           sortedFilteredItems.map((item, index) => (
-            <div key={item.id} className="rounded-xl border border-gray-100 bg-white p-4 shadow-soft">
+            <div key={item.id} className="rounded-xl border border-gray-100 bg-white p-4">
               <div className="mb-3 flex items-center justify-between">
                 <span className="rounded-lg bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">#{index + 1}</span>
               </div>
@@ -216,7 +216,7 @@ export default function MasterBarangPage() {
       </div>
 
       {/* Desktop table view */}
-      <div className="hidden overflow-hidden rounded-xl border border-gray-100 bg-white shadow-soft lg:block">
+      <div className="hidden overflow-hidden rounded-xl border border-gray-100 bg-white lg:block">
         <div className="overflow-x-auto">
           <Table>
             <TableHeader>

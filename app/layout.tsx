@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 // Define metadata for the application
 export const metadata: Metadata = {
-  title: "Himawan Putra Warehouse",
+  title: "LogiFlow Warehouse Management System",
   description: "Sistem Manajemen Gudang Modern",
   icons: {
     icon: "/favicon.ico",

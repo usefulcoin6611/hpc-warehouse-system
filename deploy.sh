@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# HPC Website Deployment Script untuk cPanel
+# LogiFlow Website Deployment Script untuk cPanel
 # Pastikan file ini executable: chmod +x deploy.sh
 
-echo "🚀 Starting HPC Website Deployment..."
+echo "🚀 Starting LogiFlow Website Deployment..."
 
 # Check if .env.production exists
 if [ ! -f .env.production ]; then
@@ -72,7 +72,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 fi
 
 echo "✅ Deployment completed successfully!"
-echo "🎉 Your HPC Website is ready to run!"
+echo "🎉 Your LogiFlow Website is ready to run!"
 
 # Optional: Start the application
 read -p "Do you want to start the application now? (y/n): " -n 1 -r

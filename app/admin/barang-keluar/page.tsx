@@ -147,7 +147,7 @@ export default function BarangKeluarPage() {
           ) : (
             <div className="grid gap-4 p-4">
               {barangKeluar.map((item, index) => (
-                  <div key={item.id} className="rounded-lg border bg-card p-4 shadow-sm">
+                  <div key={item.id} className="rounded-lg border bg-card p-4">
                     <div className="mb-3 flex items-center justify-between">
                       <span className="rounded-lg bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
                         #{item.noTransaksi}
@@ -221,7 +221,7 @@ export default function BarangKeluarPage() {
         {/* Desktop table view */}
         <div className="hidden lg:block">
           {loading ? (
-            <div className="rounded-xl border border-gray-100 bg-white shadow-soft">
+            <div className="h-full rounded-xl border border-gray-100 bg-white">
               <Table>
                 <TableHeader className="sticky top-0 bg-white z-10">
                   <TableRow className="bg-sky-100">
@@ -246,7 +246,7 @@ export default function BarangKeluarPage() {
               </Table>
             </div>
           ) : barangKeluar.length === 0 ? (
-            <div className="rounded-xl border border-gray-100 bg-white shadow-soft">
+            <div className="h-full rounded-xl border border-gray-100 bg-white">
               <Table>
                 <TableHeader className="sticky top-0 bg-white z-10">
                   <TableRow className="bg-sky-100">

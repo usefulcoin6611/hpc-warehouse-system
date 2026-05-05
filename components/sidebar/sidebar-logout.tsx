@@ -34,7 +34,7 @@ export function SidebarLogout({
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-600/30">
               <LogOut className="h-5 w-5" />
             </span>
-            <span className="ml-3">Logout</span>
+            <span className="ml-3 text-sm">Logout</span>
           </button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
@@ -67,6 +67,10 @@ export function SidebarLogout({
           </DialogFooter>
         </DialogContent>
       </Dialog>
+      <div className="mt-4 flex flex-col items-center justify-center space-y-0.5 opacity-30">
+        <span className="text-[10px] font-bold tracking-[0.2em] text-white uppercase">LogiFlow System</span>
+        <span className="text-[9px] text-indigo-100">v1.0.4-stable</span>
+      </div>
     </div>
   )
 } 

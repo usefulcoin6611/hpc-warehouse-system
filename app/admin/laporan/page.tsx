@@ -419,7 +419,7 @@ export default function LaporanPage() {
                         </div>
                       ) : (
                         filteredData.map((item, index) => (
-                          <div key={item.id} className="rounded-xl border border-gray-100 bg-white p-4 shadow-soft">
+                          <div key={item.id} className="rounded-xl border border-gray-100 bg-white p-4">
                             <div className="mb-3 flex items-center justify-between">
                               <span className="font-medium text-gray-800">#{index + 1}</span>
                               <span className="text-sm text-gray-500">{item.kodeBarang}</span>

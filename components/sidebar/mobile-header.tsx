@@ -33,8 +33,8 @@ export function MobileHeader({
           </Sheet>
           <div className="flex items-center">
             <Image
-              src="/images/hpcputih.png"
-              alt="Himawanputra Corporation Logo"
+              src="/images/hpc-log.webp"
+              alt="LogiFlow Logo"
               width={100}
               height={35}
               className="object-contain"

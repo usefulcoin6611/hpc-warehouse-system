@@ -291,7 +291,7 @@ export default function DataPenggunaPage() {
           </div>
         ) : (
           filteredUsers.map((user) => (
-            <div key={user.id} className="rounded-xl border border-gray-100 bg-white p-4 shadow-soft">
+            <div key={user.id} className="rounded-xl border border-gray-100 bg-white p-4">
               <div className="mb-3 flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#3430e2]/10 text-[#3430e2]">
@@ -360,7 +360,7 @@ export default function DataPenggunaPage() {
       </div>
 
       {/* Desktop table view */}
-      <div className="hidden overflow-hidden rounded-xl border border-gray-100 bg-white shadow-soft lg:block">
+      <div className="hidden overflow-hidden rounded-xl border border-gray-100 bg-white lg:block">
         <div className="overflow-x-auto">
           <Table>
             <TableHeader>

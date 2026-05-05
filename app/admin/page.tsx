@@ -50,7 +50,7 @@ function DashboardCard({
   }
 
   return (
-    <Card className="overflow-hidden rounded-xl border-none shadow-soft">
+    <Card className="overflow-hidden">
       <CardHeader className="flex flex-row items-center justify-between pb-2">
         <CardTitle className="text-sm font-medium text-gray-500">{title}</CardTitle>
         <div className={`flex h-9 w-9 items-center justify-center rounded-lg ${bgColor} ${textColor}`}>
@@ -101,7 +101,7 @@ function ActivityCard({ activities }: ActivityCardProps) {
   }
 
   return (
-    <Card className="overflow-hidden rounded-xl border-none shadow-soft">
+    <Card className="overflow-hidden">
       <CardHeader className="border-b border-gray-100 pb-4">
         <CardTitle className="text-lg font-medium text-gray-800">Aktivitas Terbaru</CardTitle>
       </CardHeader>
@@ -155,7 +155,7 @@ export default function AdminDashboard() {
       <div className="p-6 animate-fadeIn">
         <div className="mb-8">
           <h1 className="text-2xl font-bold text-gray-800 sm:text-3xl">Dashboard</h1>
-          <p className="text-gray-600">Selamat datang di sistem manajemen gudang PT Himawan Putra</p>
+          <p className="text-gray-600">Selamat datang di sistem manajemen gudang LogiFlow Management</p>
         </div>
         
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -202,7 +202,7 @@ export default function AdminDashboard() {
       <div className="p-6 animate-fadeIn">
         <div className="mb-8">
           <h1 className="text-2xl font-bold text-gray-800 sm:text-3xl">Dashboard</h1>
-          <p className="text-gray-600">Selamat datang di sistem manajemen gudang PT Himawan Putra</p>
+          <p className="text-gray-600">Selamat datang di sistem manajemen gudang LogiFlow Management</p>
         </div>
         
         <div className="flex items-center justify-center py-12">
@@ -221,7 +221,7 @@ export default function AdminDashboard() {
       <div className="p-6 animate-fadeIn">
         <div className="mb-8">
           <h1 className="text-2xl font-bold text-gray-800 sm:text-3xl">Dashboard</h1>
-          <p className="text-gray-600">Selamat datang di sistem manajemen gudang PT Himawan Putra</p>
+          <p className="text-gray-600">Selamat datang di sistem manajemen gudang LogiFlow Management</p>
         </div>
         
         <div className="flex items-center justify-center py-12">
@@ -246,7 +246,7 @@ export default function AdminDashboard() {
     <div className="p-6 animate-fadeIn">
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-gray-800 sm:text-3xl">Dashboard</h1>
-        <p className="text-gray-600">Selamat datang di sistem manajemen gudang PT Himawan Putra</p>
+        <p className="text-gray-600">Selamat datang di sistem manajemen gudang LogiFlow Management</p>
       </div>
       
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">

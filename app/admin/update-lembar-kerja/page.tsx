@@ -337,7 +337,7 @@ export default function UpdateLembarKerjaPage() {
           </div>
         ) : (
           filteredLembarKerja.map((item: any) => (
-          <div key={item.id} className="rounded-xl border border-gray-100 bg-white p-4 shadow-soft">
+          <div key={item.id} className="rounded-xl border border-gray-100 bg-white p-4">
             <div className="space-y-2">
               <div>
                 <p className="text-xs text-gray-500">Tanggal</p>
@@ -391,7 +391,7 @@ export default function UpdateLembarKerjaPage() {
       </div>
 
       {/* Desktop table view */}
-      <div className="hidden overflow-hidden rounded-xl border border-gray-100 bg-white shadow-soft lg:block">
+      <div className="hidden overflow-hidden rounded-xl border border-gray-100 bg-white lg:block">
         {loading ? (
           <div className="flex items-center justify-center py-8">
             <div className="text-gray-500">Loading...</div>

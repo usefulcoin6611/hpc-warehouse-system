@@ -39,7 +39,7 @@ export function SidebarNavigation({
               >
                 {item.icon}
               </span>
-              <span className="ml-3">{item.title}</span>
+              <span className="ml-3 text-sm">{item.title}</span>
               {item.submenu && <ChevronRight className="ml-auto h-4 w-4 opacity-60" />}
             </Link>
           </li>

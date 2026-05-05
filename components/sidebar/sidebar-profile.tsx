@@ -37,15 +37,15 @@ export function SidebarProfile({ user, isUserLoading, userError, className = "" 
 
   return (
     <>
-      <div className={`flex flex-col items-center gap-2 bg-[#3430e2] py-3 ${className}`}>
-        <div className="relative h-12 w-12 overflow-hidden rounded-full border-2 border-indigo-400/30 bg-indigo-600/30 shadow-lg flex items-center justify-center">
-          <User className="h-6 w-6 text-white" />
+      <div className={`flex items-center gap-3 bg-[#3430e2] px-4 py-4 ${className}`}>
+        <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full border-2 border-indigo-400/30 bg-indigo-600/30 shadow-lg flex items-center justify-center">
+          <User className="h-5 w-5 text-white" />
         </div>
-        <div className="flex flex-col items-center">
-          <h3 className={`text-sm font-bold text-white ${isUserLoading ? 'animate-pulse' : ''}`}>
+        <div className="flex flex-col min-w-0">
+          <h3 className={`truncate text-sm font-bold text-white ${isUserLoading ? 'animate-pulse' : ''}`}>
             {displayUser.name}
           </h3>
-          <p className={`text-xs text-indigo-200 ${isUserLoading ? 'animate-pulse' : ''} ${userError ? 'text-red-300' : ''}`}>
+          <p className={`truncate text-[11px] text-indigo-200 ${isUserLoading ? 'animate-pulse' : ''} ${userError ? 'text-red-300' : ''}`}>
             {displayUser.role}
           </p>
         </div>
